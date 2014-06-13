@@ -41,7 +41,7 @@ namespace stafix24.pl.Controllers
                 model.comment);
 
             var svc = new MailService();
-            if (svc.SendMail("noreply@stafix24.pl", "jacek.rawiak@hotmail.com","::Inormacja z witryny Stafix24.pl::", msg))
+            if (svc.SendMail("noreply@stafix24.pl", "jacek.rawiak@hotmail.com","::Informacja z witryny Stafix24.pl::", msg))
             {
                  ViewBag.MailSent = true;
             }
