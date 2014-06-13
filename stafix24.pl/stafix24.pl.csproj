@@ -368,7 +368,9 @@
     <Content Include="Content\Template\font\fontawesome-webfont.ttf" />
     <Content Include="Content\Template\font\fontawesome-webfont.woff" />
     <Content Include="Content\Template\font\FontAwesome.otf" />
+    <None Include="Properties\PublishProfiles\stafix24 - FTP %282%29.pubxml" />
     <None Include="Properties\PublishProfiles\stafix24 - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\stafix24 - Web Deploy %282%29.pubxml" />
     <None Include="Properties\PublishProfiles\stafix24 - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <Content Include="Images\Index\Slajd1.PNG" />
