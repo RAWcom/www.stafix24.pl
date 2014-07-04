@@ -372,8 +372,10 @@
     <None Include="Properties\PublishProfiles\stafix24 - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\stafix24 - Web Deploy %282%29.pubxml" />
     <None Include="Properties\PublishProfiles\stafix24 - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\stafix24.pubxml" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <Content Include="Images\Index\Slajd1.PNG" />
+    <Content Include="Images\Index\Slajd10.PNG" />
     <Content Include="Images\Index\Slajd2.PNG" />
     <Content Include="Images\Index\Slajd3.PNG" />
     <Content Include="Images\Index\Slajd4.PNG" />
@@ -381,6 +383,7 @@
     <Content Include="Images\Index\Slajd6.PNG" />
     <Content Include="Images\Index\Slajd7.PNG" />
     <Content Include="Images\Index\Slajd8.PNG" />
+    <Content Include="Images\Index\Slajd9.PNG" />
     <Content Include="Images\ProductDetails\browsers.PNG" />
     <Content Include="Images\ProductDetails\klasy_systemów.PNG" />
     <Content Include="Images\ProductDetails\money.PNG" />
