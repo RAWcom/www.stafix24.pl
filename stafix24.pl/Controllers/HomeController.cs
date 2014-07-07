@@ -34,14 +34,14 @@ namespace stafix24.pl.Controllers
         [HttpPost]
         public ActionResult Contact(ContactModel model)
         {
-            var msg = String.Format("Informacja z witryny STAFix24.pl od: {1}{0}Email:{2}{0}Komentarz:{3}{0}",
-                Environment.NewLine,
+            var msg = String.Format("Nadawca: {1}{0}Email: {2}{0}Komentarz: {3}{0}",
+                Environment.NewLine+"\n",
                 model.name,
                 model.email,
                 model.comment);
 
             var svc = new MailService();
-            if (svc.SendMail("noreply@stafix24.pl", "jacek.rawiak@hotmail.com;biuro@rawcom24.pl","::Informacja z witryny Stafix24.pl::", msg))
+            if (svc.SendMail("noreply@stafix24.pl", "biuro@rawcom24.pl","::Informacja z witryny Stafix24.pl::", msg))
             {
                  ViewBag.MailSent = true;
             }

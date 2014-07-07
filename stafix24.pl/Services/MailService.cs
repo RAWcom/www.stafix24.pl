@@ -19,17 +19,17 @@ namespace stafix24.pl.Services
             MailMessage mailMsg = new MailMessage();
 
             // To
-            mailMsg.To.Add(new MailAddress("jacek.rawiak@hotmail.com", "Administrator witryny STAFix24.pl"));
+            mailMsg.To.Add(new MailAddress(to.ToString(), "Administrator witryny STAFix24.pl"));
 
             // From
-            mailMsg.From = new MailAddress("noreply@stafix24.pl", "Witryna STAFix24.pl");
+            mailMsg.From = new MailAddress(from.ToString(), "Witryna STAFix24.pl");
 
             // Subject and multipart/alternative Body
-            mailMsg.Subject = subject;
+            mailMsg.Subject = subject.ToString();
             string text = body;
             string html = @"<p>"+body+"</p>";
-            //mailMsg.AlternateViews.Add(AlternateView.CreateAlternateViewFromString(text, null, MediaTypeNames.Text.Plain));
-            mailMsg.AlternateViews.Add(AlternateView.CreateAlternateViewFromString(html, null, MediaTypeNames.Text.Html));
+            mailMsg.AlternateViews.Add(AlternateView.CreateAlternateViewFromString(text, null, MediaTypeNames.Text.Plain));
+            //mailMsg.AlternateViews.Add(AlternateView.CreateAlternateViewFromString(html, null, MediaTypeNames.Text.Html));
 
             // Init SmtpClient and send
             SmtpClient smtpClient = new SmtpClient("smtp.sendgrid.net", Convert.ToInt32(587));

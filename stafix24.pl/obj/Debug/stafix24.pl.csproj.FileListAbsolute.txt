@@ -167,3 +167,4 @@ C:\Users\admin3324\Documents\GitHub\www.stafix24.pl\stafix24.pl\bin\zh-Hans\Syst
 C:\Users\admin3324\Documents\GitHub\www.stafix24.pl\stafix24.pl\bin\zh-Hant\System.Spatial.resources.dll
 C:\Users\admin3324\Documents\GitHub\www.stafix24.pl\stafix24.pl\obj\Debug\stafix24.pl.dll
 C:\Users\admin3324\Documents\GitHub\www.stafix24.pl\stafix24.pl\obj\Debug\stafix24.pl.pdb
+C:\Users\admin3324\Documents\GitHub\www.stafix24.pl\stafix24.pl\obj\Debug\stafix24.pl.csprojResolveAssemblyReference.cache

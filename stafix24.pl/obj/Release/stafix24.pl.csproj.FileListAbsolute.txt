@@ -250,6 +250,5 @@ C:\Users\admin3324\Documents\GitHub\www.stafix24.pl\stafix24.pl\bin\ko\System.Sp
 C:\Users\admin3324\Documents\GitHub\www.stafix24.pl\stafix24.pl\bin\ru\System.Spatial.resources.dll
 C:\Users\admin3324\Documents\GitHub\www.stafix24.pl\stafix24.pl\bin\zh-Hans\System.Spatial.resources.dll
 C:\Users\admin3324\Documents\GitHub\www.stafix24.pl\stafix24.pl\bin\zh-Hant\System.Spatial.resources.dll
-C:\Users\admin3324\Documents\GitHub\www.stafix24.pl\stafix24.pl\obj\Release\stafix24.pl.csprojResolveAssemblyReference.cache
 C:\Users\admin3324\Documents\GitHub\www.stafix24.pl\stafix24.pl\obj\Release\stafix24.pl.dll
 C:\Users\admin3324\Documents\GitHub\www.stafix24.pl\stafix24.pl\obj\Release\stafix24.pl.pdb

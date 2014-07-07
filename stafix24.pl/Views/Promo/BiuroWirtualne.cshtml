@@ -1,0 +1,191 @@
+﻿@model stafix24.pl.Models.BiuroWirtualneContactModel
+
+@{
+    ViewBag.Title = "Formularz kontaktowy - Biuro Wirtualne";
+}
+
+
+<div class="main">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 hidden-lg">
+                <div class="padd">
+                    <div class="navis"></div>
+                </div>
+            </div>
+            <div class="visible-lg">
+            </div>
+            <div class="col-md-12">
+                <div class="whity content">
+                    <!-- Main Content Starts Here -->
+                    <!-- Content should be encloased inside div with the class "posts" -->
+                    <div class="posts">
+                        <!-- Each entry should be enclosed inside div with the class "entry" -->
+                        <div class="entry">
+                            <div class="padd">
+                                <!-- Contact Page title -->
+                                <h2>@ViewBag.Title</h2>
+                                <!-- Contact Page Para -->
+                                <p>@ViewBag.Message</p>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-7 col-md-offset-1">
+                                    <div class="padd">
+                                        <div class="co-form">
+
+
+                                            <form class="form-horizontal" method="post">
+
+                                                <fieldset>
+                                                    <legend>Dane kontaktowe</legend>
+
+                                                    <div class="form-group">
+                                                        @Html.LabelFor(model => model.ContactName, new { @class = "control-label col-md-3" })
+                                                        <div class="col-md-9">
+
+                                                            @Html.TextBoxFor(model => model.ContactName, new { @class = "form-control", placeholder = "imię i nazwisko" })
+                                                            @Html.ValidationMessageFor(model => model.ContactName)
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        @Html.LabelFor(model => model.eMailAddress, new { @class = "control-label col-md-3" })
+                                                        <div class="col-md-9">
+                                                            @Html.TextBoxFor(model => model.eMailAddress, new { @class = "form-control", placeholder = "adres poczty elektronicznej" })
+                                                            @Html.ValidationMessageFor(model => model.eMailAddress)
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        @Html.LabelFor(model => model.Telephone, new { @class = "control-label col-md-3" })
+                                                        <div class="col-md-9">
+                                                            @Html.TextBoxFor(model => model.Telephone, new { @class = "form-control", placeholder = "numer telefonu" })
+                                                            @Html.ValidationMessageFor(model => model.Telephone)
+                                                        </div>
+                                                    </div>
+
+
+                                                    <legend>Obszary zainteresowania</legend>
+
+                                                    <div class="">
+                                                        @Html.LabelFor(model => model.q1, new { @class = "control-label col-md-11" })
+                                                        <div class="col-md-1">
+                                                            @Html.EditorFor(model => model.q1)
+                                                            @Html.ValidationMessageFor(model => model.q1)
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="">
+                                                        @Html.LabelFor(model => model.q2, new { @class = "control-label col-md-11" })
+                                                        <div class="col-md-1">
+                                                            @Html.EditorFor(model => model.q2)
+                                                            @Html.ValidationMessageFor(model => model.q2)
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="">
+                                                        @Html.LabelFor(model => model.q3, new { @class = "control-label col-md-11" })
+                                                        <div class="col-md-1">
+                                                            @Html.EditorFor(model => model.q3)
+                                                            @Html.ValidationMessageFor(model => model.q3)
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="">
+                                                        @Html.LabelFor(model => model.q4, new { @class = "control-label col-md-11" })
+                                                        <div class="col-md-1">
+                                                            @Html.EditorFor(model => model.q4)
+                                                            @Html.ValidationMessageFor(model => model.q4)
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="">
+                                                        @Html.LabelFor(model => model.q5, new { @class = "control-label col-md-11" })
+                                                        <div class="col-md-1">
+                                                            @Html.EditorFor(model => model.q5)
+                                                            @Html.ValidationMessageFor(model => model.q5)
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="">
+                                                        @Html.LabelFor(model => model.q6, new { @class = "control-label col-md-11" })
+                                                        <div class="col-md-1">
+                                                            @Html.EditorFor(model => model.q6)
+                                                            @Html.ValidationMessageFor(model => model.q6)
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="">
+                                                        @Html.LabelFor(model => model.q7, new { @class = "control-label col-md-11" })
+                                                        <div class="col-md-1">
+                                                            @Html.EditorFor(model => model.q7)
+                                                            @Html.ValidationMessageFor(model => model.q7)
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="">
+                                                        @Html.LabelFor(model => model.q8, new { @class = "control-label col-md-11" })
+                                                        <div class="col-md-1">
+                                                            @Html.EditorFor(model => model.q8)
+                                                            @Html.ValidationMessageFor(model => model.q8)
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="">
+                                                        @Html.LabelFor(model => model.q0, new { @class = "control-label col-md-11" })
+                                                        <div class="col-md-1">
+                                                            @Html.EditorFor(model => model.q0)
+                                                            @Html.ValidationMessageFor(model => model.q0)
+                                                        </div>
+                                                    </div>
+
+                                                    <legend></legend>
+
+                                                    <div class="form-group">
+                                                        @Html.LabelFor(model => model.MessageBody, new { @class = "control-label col-md-3" })
+                                                        <div class="col-md-9">
+                                                            @Html.TextAreaFor(model => model.MessageBody, new { @class = "form-control", @rows = "3" })
+                                                            @Html.ValidationMessageFor(model => model.MessageBody)
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <div class="col-md-offset-3 col-md-9">
+                                                            <button type="submit" class="btn btn-default">Wyślij</button>
+                                                            @if (ViewBag.MailSent != null && ViewBag.MailSent)
+                                                            {
+                                                                <div>Wiadomość została wysłana !</div>
+                                                            }
+                                                        </div>
+                                                    </div>
+                                                </fieldset>
+
+                                            </form>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    @Html.Partial("_CompanyContactPartial")
+                                </div>
+                                <div class="col-md-offset-1"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Main Content Ends Here -->
+                </div>
+
+            </div>
+
+            <div class="mobily hidden-lg">
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
