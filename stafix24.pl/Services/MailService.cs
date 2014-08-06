@@ -29,8 +29,8 @@ namespace stafix24.pl.Services
             mailMsg.Subject = subject.ToString();
             string text = body;
             string html = @"<p>"+body+"</p>";
-            mailMsg.AlternateViews.Add(AlternateView.CreateAlternateViewFromString(text, null, MediaTypeNames.Text.Plain));
-            //mailMsg.AlternateViews.Add(AlternateView.CreateAlternateViewFromString(html, null, MediaTypeNames.Text.Html));
+            //mailMsg.AlternateViews.Add(AlternateView.CreateAlternateViewFromString(text, null, MediaTypeNames.Text.Plain));
+            mailMsg.AlternateViews.Add(AlternateView.CreateAlternateViewFromString(html, null, MediaTypeNames.Text.Html));
 
             //get config params
             string sMTPServerName = WebConfigurationManager.AppSettings["SMTPServerName"].ToString();

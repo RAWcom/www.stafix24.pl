@@ -6,6 +6,7 @@ using System.Web.Mvc;
 using stafix24.pl.Models;
 using stafix24.pl.Services;
 using System.Web.Configuration;
+using System.Text;
 
 namespace stafix24.pl.Controllers
 {
@@ -35,7 +36,13 @@ namespace stafix24.pl.Controllers
         [HttpPost]
         public ActionResult Contact(ContactModel model)
         {
-            var msg = String.Format("Nadawca: {1}{0}Email: {2}{0}Komentarz: {3}{0}",
+            //var msg = String.Format("Nadawca: {1}{0}Email: {2}{0}Komentarz: {3}{0}",
+            //    Environment.NewLine+"\n",
+            //    model.name,
+            //    model.email,
+            //    model.comment);
+
+            var msg=String.Format(@"<table style='width: 600px'><tr><td width='30px'>Nadawca</td><td>{1}</td></tr><tr><td>Email</td><td>{2}</td></tr><tr><td>Wiadomość</td><td>{3}</td></tr></table>",
                 Environment.NewLine+"\n",
                 model.name,
                 model.email,
@@ -44,7 +51,7 @@ namespace stafix24.pl.Controllers
             string returnEmailAddress = WebConfigurationManager.AppSettings["ReturnEmailAddress"].ToString() ;
 
             var svc = new MailService();
-            if (svc.SendMail("noreply@stafix24.pl", returnEmailAddress, "::Informacja z witryny Stafix24.pl::", msg))
+            if (svc.SendMail(model.email.ToString(), returnEmailAddress, "::Informacja z witryny Stafix24.pl::", msg))
             {
                  ViewBag.MailSent = true;
             }
