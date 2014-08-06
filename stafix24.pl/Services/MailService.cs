@@ -6,6 +6,7 @@ using System.Web;
 
 using System.Text;
 using System.Net.Mime;
+using System.Web.Configuration;
 
 namespace stafix24.pl.Services
 {
@@ -31,9 +32,14 @@ namespace stafix24.pl.Services
             mailMsg.AlternateViews.Add(AlternateView.CreateAlternateViewFromString(text, null, MediaTypeNames.Text.Plain));
             //mailMsg.AlternateViews.Add(AlternateView.CreateAlternateViewFromString(html, null, MediaTypeNames.Text.Html));
 
+            //get config params
+            string sMTPServerName = WebConfigurationManager.AppSettings["SMTPServerName"].ToString();
+            string sMTPLoginName = WebConfigurationManager.AppSettings["SMTPLoginName"].ToString();
+            string sMTPPassword = WebConfigurationManager.AppSettings["SMTPPassword"].ToString();
+
             // Init SmtpClient and send
-            SmtpClient smtpClient = new SmtpClient("smtp.sendgrid.net", Convert.ToInt32(587));
-            System.Net.NetworkCredential credentials = new System.Net.NetworkCredential("azure_0668b4ea696ee6ff57032277a9e79919@azure.com", "mgbo5wtl");
+            SmtpClient smtpClient = new SmtpClient(sMTPServerName, Convert.ToInt32(587));
+            System.Net.NetworkCredential credentials = new System.Net.NetworkCredential(sMTPLoginName, sMTPPassword);
             smtpClient.Credentials = credentials;
 
             smtpClient.Send(mailMsg);

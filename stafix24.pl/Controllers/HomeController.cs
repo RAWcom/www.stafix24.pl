@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using stafix24.pl.Models;
 using stafix24.pl.Services;
+using System.Web.Configuration;
 
 namespace stafix24.pl.Controllers
 {
@@ -40,8 +41,10 @@ namespace stafix24.pl.Controllers
                 model.email,
                 model.comment);
 
+            string returnEmailAddress = WebConfigurationManager.AppSettings["ReturnEmailAddress"].ToString() ;
+
             var svc = new MailService();
-            if (svc.SendMail("noreply@stafix24.pl", "biuro@rawcom24.pl","::Informacja z witryny Stafix24.pl::", msg))
+            if (svc.SendMail("noreply@stafix24.pl", returnEmailAddress, "::Informacja z witryny Stafix24.pl::", msg))
             {
                  ViewBag.MailSent = true;
             }
