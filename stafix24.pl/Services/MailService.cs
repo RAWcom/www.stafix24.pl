@@ -25,9 +25,10 @@ namespace stafix24.pl.Services
             string sMTPServerName = WebConfigurationManager.AppSettings["SMTPServerName"].ToString();
             string sMTPLoginName = WebConfigurationManager.AppSettings["SMTPLoginName"].ToString();
             string sMTPPassword = WebConfigurationManager.AppSettings["SMTPPassword"].ToString();
+            int sMTPPort = Convert.ToInt32(WebConfigurationManager.AppSettings["SMTPPort"].ToString());
 
 
-            SmtpClient client = new SmtpClient(sMTPServerName, 587);
+            SmtpClient client = new SmtpClient(sMTPServerName, sMTPPort);
             System.Net.NetworkCredential basicCredential = new System.Net.NetworkCredential(sMTPLoginName, sMTPPassword);
             client.EnableSsl = true;
             client.UseDefaultCredentials = true;
