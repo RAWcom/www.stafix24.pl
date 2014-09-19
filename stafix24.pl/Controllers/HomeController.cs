@@ -12,6 +12,9 @@ namespace stafix24.pl.Controllers
 {
     public class HomeController : Controller
     {
+        string senderEmailAddress;
+        string targetEmailAddress;
+
         public ActionResult Index()
         {
             ViewBag.Message = "Modify this template to jump-start your ASP.NET MVC application.";
@@ -48,10 +51,11 @@ namespace stafix24.pl.Controllers
                 model.email,
                 model.comment);
 
-            string returnEmailAddress = WebConfigurationManager.AppSettings["ReturnEmailAddress"].ToString() ;
+            string senderEmailAddress = WebConfigurationManager.AppSettings["SenderEmailAddress"].ToString();
+            string targetEmailAddress = WebConfigurationManager.AppSettings["TargetEmailAddress"].ToString();
 
             var svc = new MailService();
-            if (svc.SendMail(model.email.ToString(), returnEmailAddress, "::Informacja z witryny Stafix24.pl::", msg))
+            if (svc.SendMail(senderEmailAddress, targetEmailAddress, model.email.ToString(), "::Informacja z witryny Stafix24.pl::", msg))
             {
                  ViewBag.MailSent = true;
             }
@@ -80,6 +84,10 @@ namespace stafix24.pl.Controllers
             return View();
         }
         public ActionResult CommercialOffer()
+        {
+            return View();
+        }
+        public ActionResult RulesOfService()
         {
             return View();
         }

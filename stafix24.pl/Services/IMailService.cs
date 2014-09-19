@@ -4,6 +4,6 @@ namespace stafix24.pl.Services
 {
     public interface IMailService
     {
-        bool SendMail(string from, string to, string subject, string body);
+        bool SendMail(string from, string to,  string replyto, string subject, string body);
     }
 }

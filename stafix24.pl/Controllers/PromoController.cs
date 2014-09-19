@@ -31,7 +31,7 @@ namespace stafix24.pl.Controllers
                 model.q1,model.q2,model.q3,model.q4,model.q5,model.q6,model.q7,model.q8,model.q9,model.q10,model.q11,model.q0);
 
             var svc = new MailService();
-            if (svc.SendMail("stafix-restauracja@stafix24.pl", "biuro@rawcom24.pl", "::Informacja z witryny Stafix24.pl::Restauracja::", msg))
+            if (svc.SendMail("stafix-restauracja@stafix24.pl", "biuro@rawcom24.pl",model.eMailAddress.ToString(), "::Informacja z witryny Stafix24.pl::Restauracja::", msg))
             {
                 ViewBag.MailSent = true;
             }
@@ -62,7 +62,7 @@ namespace stafix24.pl.Controllers
                 model.q1, model.q2, model.q3, model.q4, model.q5, model.q6, model.q7, model.q8, model.q0);
 
             var svc = new MailService();
-            if (svc.SendMail("stafix-biuro-wirtualne@stafix24.pl", "biuro@rawcom24.pl", "::Informacja z witryny Stafix24.pl::Biuro Wirtualne::", msg))
+            if (svc.SendMail("stafix-biuro-wirtualne@stafix24.pl", "biuro@rawcom24.pl", model.eMailAddress.ToString(), "::Informacja z witryny Stafix24.pl::Biuro Wirtualne::", msg))
             {
                 ViewBag.MailSent = true;
             }

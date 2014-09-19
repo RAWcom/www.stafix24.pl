@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "Regulamin Usługi - Hosting platformy STAFix24";
+}
+
+<div class="main">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 hidden-lg">
+                <div class="padd">
+                    <div class="navis"></div>
+                </div>
+            </div>
+            <div class="visible-lg">
+                <div class="col-md-3 sidey">
+                    <!-- Sidebar Starts Here -->
+                    @Html.Partial("_RulesOfService.SideBarPartial")
+                    <!-- Sidebar Ends Here -->
+                </div>
+            </div>
+            <div class="col-md-9">
+                @Html.Partial("_RulesOfService.MainPartial")
+            </div>
+
+            <div class="mobily hidden-lg">
+            </div>
+        </div>
+    </div>
+</div>

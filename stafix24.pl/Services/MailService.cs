@@ -13,13 +13,15 @@ namespace stafix24.pl.Services
     public class MailService : IMailService
     {
 
-        public bool SendMail(string from, string to, string subject, string body)
+        public bool SendMail(string from, string to, string replyto, string subject, string body)
         {
+           
             MailMessage msg = new MailMessage(from, to);
             msg.Subject = subject;
             msg.Body = body;
             msg.BodyEncoding = Encoding.UTF8;
             msg.IsBodyHtml = true;
+            msg.ReplyToList.Add(replyto);
 
             //get config params
             string sMTPServerName = WebConfigurationManager.AppSettings["SMTPServerName"].ToString();

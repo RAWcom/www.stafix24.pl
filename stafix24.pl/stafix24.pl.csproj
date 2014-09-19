@@ -484,6 +484,9 @@
     <Content Include="Views\Shared\_CommercialOffer.SideBarPartial.cshtml" />
     <Content Include="Views\Promo\Restauracja.cshtml" />
     <Content Include="Views\Promo\BiuroWirtualne.cshtml" />
+    <Content Include="Views\Home\RulesOfService.cshtml" />
+    <Content Include="Views\Shared\_RulesOfService.MainPartial.cshtml" />
+    <Content Include="Views\Shared\_RulesOfService.SideBarPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -505,7 +508,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>6261</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
