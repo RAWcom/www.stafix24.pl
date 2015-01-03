@@ -1,0 +1,18 @@
+﻿Elastic Mail:
+
+    <add key="SMTPServerName" value="smtp.elasticemail.com"/>
+    <add key="SMTPLoginName" value="5489cdaf-fa02-47d4-9244-886d709f07a3"/>
+    <add key="SMTPPassword" value="5489cdaf-fa02-47d4-9244-886d709f07a3"/>
+    <add key="SMTPPort" value="2525"/>
+
+Mandrill biuro@rawcom24.pl:
+    <add key="SMTPServerName" value="smtp.mandrillapp.com"/>
+    <add key="SMTPLoginName" value="biuro@rawcom24.pl"/>
+    <add key="SMTPPassword" value="UXfwr-JHhLkJZn8Z4n0BnA"/>
+    <add key="SMTPPort" value="587"/>
+
+Mandrill jacek.rawiak@hotmail.com
+    <add key="SMTPServerName" value="smtp.mandrillapp.com"/>
+    <add key="SMTPLoginName" value="jacek.rawiak@hotmail.com"/>
+    <add key="SMTPPassword" value="YmpTFfEqFFzocyjumhDVzg"/>
+    <add key="SMTPPort" value="587"/>
