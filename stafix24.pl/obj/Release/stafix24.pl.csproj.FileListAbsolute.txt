@@ -168,6 +168,7 @@ E:\_20140501\dokumenty 20140501\GitHub\stafix24.pl\stafix24.pl\bin\zh-Hant\Syste
 E:\_20140501\dokumenty 20140501\GitHub\stafix24.pl\stafix24.pl\obj\Release\stafix24.pl.csprojResolveAssemblyReference.cache
 E:\_20140501\dokumenty 20140501\GitHub\stafix24.pl\stafix24.pl\obj\Release\stafix24.pl.dll
 E:\_20140501\dokumenty 20140501\GitHub\stafix24.pl\stafix24.pl\obj\Release\stafix24.pl.pdb
+C:\Users\admin3324\Documents\GitHub\www.stafix24.pl\stafix24.pl\bin\stafix24.pl.dll.config
 C:\Users\admin3324\Documents\GitHub\www.stafix24.pl\stafix24.pl\bin\stafix24.pl.dll
 C:\Users\admin3324\Documents\GitHub\www.stafix24.pl\stafix24.pl\bin\stafix24.pl.pdb
 C:\Users\admin3324\Documents\GitHub\www.stafix24.pl\stafix24.pl\bin\Antlr3.Runtime.dll
@@ -184,12 +185,9 @@ C:\Users\admin3324\Documents\GitHub\www.stafix24.pl\stafix24.pl\bin\Microsoft.We
 C:\Users\admin3324\Documents\GitHub\www.stafix24.pl\stafix24.pl\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
 C:\Users\admin3324\Documents\GitHub\www.stafix24.pl\stafix24.pl\bin\Microsoft.Web.WebPages.OAuth.dll
 C:\Users\admin3324\Documents\GitHub\www.stafix24.pl\stafix24.pl\bin\Newtonsoft.Json.dll
-C:\Users\admin3324\Documents\GitHub\www.stafix24.pl\stafix24.pl\bin\System.Net.Http.Formatting.dll
 C:\Users\admin3324\Documents\GitHub\www.stafix24.pl\stafix24.pl\bin\System.Spatial.dll
 C:\Users\admin3324\Documents\GitHub\www.stafix24.pl\stafix24.pl\bin\System.Web.Helpers.dll
-C:\Users\admin3324\Documents\GitHub\www.stafix24.pl\stafix24.pl\bin\System.Web.Http.dll
 C:\Users\admin3324\Documents\GitHub\www.stafix24.pl\stafix24.pl\bin\System.Web.Http.OData.dll
-C:\Users\admin3324\Documents\GitHub\www.stafix24.pl\stafix24.pl\bin\System.Web.Http.WebHost.dll
 C:\Users\admin3324\Documents\GitHub\www.stafix24.pl\stafix24.pl\bin\System.Web.Mvc.dll
 C:\Users\admin3324\Documents\GitHub\www.stafix24.pl\stafix24.pl\bin\System.Web.Optimization.dll
 C:\Users\admin3324\Documents\GitHub\www.stafix24.pl\stafix24.pl\bin\System.Web.Razor.dll
@@ -201,10 +199,7 @@ C:\Users\admin3324\Documents\GitHub\www.stafix24.pl\stafix24.pl\bin\WebMatrix.Da
 C:\Users\admin3324\Documents\GitHub\www.stafix24.pl\stafix24.pl\bin\WebMatrix.WebData.dll
 C:\Users\admin3324\Documents\GitHub\www.stafix24.pl\stafix24.pl\bin\EntityFramework.xml
 C:\Users\admin3324\Documents\GitHub\www.stafix24.pl\stafix24.pl\bin\Newtonsoft.Json.xml
-C:\Users\admin3324\Documents\GitHub\www.stafix24.pl\stafix24.pl\bin\System.Net.Http.Formatting.xml
 C:\Users\admin3324\Documents\GitHub\www.stafix24.pl\stafix24.pl\bin\System.Web.Helpers.xml
-C:\Users\admin3324\Documents\GitHub\www.stafix24.pl\stafix24.pl\bin\System.Web.Http.xml
-C:\Users\admin3324\Documents\GitHub\www.stafix24.pl\stafix24.pl\bin\System.Web.Http.WebHost.xml
 C:\Users\admin3324\Documents\GitHub\www.stafix24.pl\stafix24.pl\bin\System.Web.Mvc.xml
 C:\Users\admin3324\Documents\GitHub\www.stafix24.pl\stafix24.pl\bin\System.Web.Razor.xml
 C:\Users\admin3324\Documents\GitHub\www.stafix24.pl\stafix24.pl\bin\System.Web.WebPages.xml
@@ -252,5 +247,3 @@ C:\Users\admin3324\Documents\GitHub\www.stafix24.pl\stafix24.pl\bin\zh-Hans\Syst
 C:\Users\admin3324\Documents\GitHub\www.stafix24.pl\stafix24.pl\bin\zh-Hant\System.Spatial.resources.dll
 C:\Users\admin3324\Documents\GitHub\www.stafix24.pl\stafix24.pl\obj\Release\stafix24.pl.dll
 C:\Users\admin3324\Documents\GitHub\www.stafix24.pl\stafix24.pl\obj\Release\stafix24.pl.pdb
-C:\Users\admin3324\Documents\GitHub\www.stafix24.pl\stafix24.pl\bin\stafix24.pl.dll.config
-C:\Users\admin3324\Documents\GitHub\www.stafix24.pl\stafix24.pl\obj\Release\stafix24.pl.csprojResolveAssemblyReference.cache
